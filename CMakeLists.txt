@@ -9,4 +9,6 @@ add_executable(sysfetch main.cpp
         Uptime.cpp
         Uptime.h
         Ram.cpp
-        Ram.h)
+        Ram.h
+        System.cpp
+        System.h)

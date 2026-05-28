@@ -1,7 +1,7 @@
 
 #include "Uptime.h"
 
-using namespace std;
+
 
 void Uptime::getUptime() {
    ULONGLONG ms = GetTickCount64();
@@ -13,6 +13,6 @@ void Uptime::getUptime() {
    minute = minute % 60;
    second = second % 60;
 
-   cout << hour << " hour " << minute << " minute " << second << " second" << endl;
+   std::cout << hour << " hour " << minute << " minute " << second << " second" << std::endl;
 
 }
