@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(sysfetch main.cpp
         Cpu.cpp
-        Cpu.h)
+        Cpu.h
+        Uptime.cpp
+        Uptime.h)
