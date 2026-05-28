@@ -4,10 +4,12 @@
 
 #include <string>
 #include <windows.h>
+#include <Lmcons.h>
 
 class System {
 public:
     std::string getComputerName();
+    std::string getUserName();
 };
 
 

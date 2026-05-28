@@ -9,3 +9,11 @@ std::string System::getComputerName() {
 
     return computerName;
 }
+
+std::string System::getUserName() {
+    char userName[UNLEN+ 1];
+    DWORD size = UNLEN + 1;
+    GetUserNameA(userName, &size);
+
+    return userName;
+}

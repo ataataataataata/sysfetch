@@ -11,6 +11,6 @@ int main() {
     cout << cpu.getNumberOfProcessors() << endl;
     System sys;
     cout << sys.getComputerName() << endl;
-
+    cout<<sys.getUserName()<<endl;
     return 0;
 }
