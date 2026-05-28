@@ -6,7 +6,9 @@
 
 class Uptime {
 public:
+
     void getUptime();
+
 };
 
 

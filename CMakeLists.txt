@@ -7,4 +7,6 @@ add_executable(sysfetch main.cpp
         Cpu.cpp
         Cpu.h
         Uptime.cpp
-        Uptime.h)
+        Uptime.h
+        Ram.cpp
+        Ram.h)
