@@ -1,6 +1,7 @@
 
 #ifndef SYSFETCH_CPU_H
 #define SYSFETCH_CPU_H
+#include <string>
 #include <windows.h>
 
 
@@ -11,7 +12,8 @@ public:
     Cpu();
     DWORD getNumberOfProcessors();
     WORD getProcessorArchitecture();
-    
+
+    std::string getCpuName();
 
 };
 

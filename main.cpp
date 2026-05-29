@@ -9,11 +9,11 @@ int main() {
     Cpu cpu;
     cout << cpu.getProcessorArchitecture() << endl;
     cout << cpu.getNumberOfProcessors() << endl;
+    cout << cpu.getCpuName() << endl;
     System sys;
     cout << sys.getComputerName() << endl;
     cout<<sys.getUserName()<<endl;
     cout << sys.getOsVersion() << endl;
-
 
     return 0;
 }
