@@ -11,4 +11,9 @@ add_executable(sysfetch main.cpp
         Ram.cpp
         Ram.h
         System.cpp
-        System.h)
+        System.h
+        Gpu.cpp
+        Gpu.h)
+
+
+target_link_libraries(sysfetch dxgi)

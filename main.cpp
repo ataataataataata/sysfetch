@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h>
 #include "Cpu.h"
+#include "Gpu.h"
 #include "System.h"
 
 using namespace std;
@@ -14,6 +15,9 @@ int main() {
     cout << sys.getComputerName() << endl;
     cout<<sys.getUserName()<<endl;
     cout << sys.getOsVersion() << endl;
+    Gpu gpu;
+    cout << gpu.getGpuName() << endl;
+
 
     return 0;
 }
