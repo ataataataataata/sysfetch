@@ -7,7 +7,7 @@ DWORDLONG Ram::getRamSize() {
     MEMORYSTATUSEX statex;
     statex.dwLength = sizeof (statex);
     GlobalMemoryStatusEx(&statex);
-    return statex.ullTotalPhys;
+    return (statex.ullTotalPhys)/ 1024 / 1024;
 }
 
 //Used Ram Size
@@ -15,7 +15,7 @@ DWORDLONG Ram::getUsedRam() {
     MEMORYSTATUSEX statex;
     statex.dwLength = sizeof (statex);
     GlobalMemoryStatusEx(&statex);
-    return statex.ullTotalPhys - statex.ullAvailPhys;
+    return (statex.ullTotalPhys - statex.ullAvailPhys)/ 1024 / 1024;
 }
 
 //Percentage of Usage
