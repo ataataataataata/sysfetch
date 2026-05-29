@@ -46,9 +46,9 @@ void Menu::print() {
 
     for (int i = 0; i < logo.size(); i++) {
         if (i < info.size()) {
-            std::cout << logo[i] << "    " << info[i] << std::endl;
+            std::cout << BLUE << logo[i] << RESET << "    " << CYAN << info[i] << RESET << std::endl;
         } else {
-            std::cout << logo[i] << std::endl;
+            std::cout << BLUE << logo[i] << RESET << std::endl;
         }
     }
 }

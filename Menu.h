@@ -8,6 +8,7 @@
 #include "Ram.h"
 #include <vector>
 #include "Logo.h"
+#include "Colors.h"
 
 class Menu {
     public:

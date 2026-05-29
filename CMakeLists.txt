@@ -17,6 +17,7 @@ add_executable(sysfetch main.cpp
         Menu.cpp
         Menu.h
         Logo.h
+        Colors.h
 )
 
 
