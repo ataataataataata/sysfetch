@@ -12,5 +12,8 @@ int main() {
     System sys;
     cout << sys.getComputerName() << endl;
     cout<<sys.getUserName()<<endl;
+    cout << sys.getOsVersion() << endl;
+
+
     return 0;
 }

@@ -11,6 +11,7 @@ public:
     Cpu();
     DWORD getNumberOfProcessors();
     WORD getProcessorArchitecture();
+    
 
 };
 

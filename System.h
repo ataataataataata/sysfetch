@@ -10,6 +10,7 @@ class System {
 public:
     std::string getComputerName();
     std::string getUserName();
+    std::string getOsVersion();
 };
 
 

@@ -17,3 +17,17 @@ std::string System::getUserName() {
 
     return userName;
 }
+
+std::string System::getOsVersion() {
+    OSVERSIONINFOEXA osVersionInfo;
+    osVersionInfo.dwOSVersionInfoSize = sizeof(OSVERSIONINFOEXA);
+    GetVersionExA((LPOSVERSIONINFOA)&osVersionInfo);
+    std::string version = std::to_string(osVersionInfo.dwMajorVersion) + "." +
+                          std::to_string(osVersionInfo.dwMinorVersion);
+
+    if (osVersionInfo.dwBuildNumber >= 22000) {
+        return "Windows 11 (Build " + std::to_string(osVersionInfo.dwBuildNumber) + ")";
+    } else {
+        return "Windows 10 (Build " + std::to_string(osVersionInfo.dwBuildNumber) + ")";
+    }
+}
