@@ -14,6 +14,9 @@ add_executable(sysfetch main.cpp
         System.h
         Gpu.cpp
         Gpu.h
+        Menu.cpp
+        Menu.h
+        Logo.h
 )
 
 
