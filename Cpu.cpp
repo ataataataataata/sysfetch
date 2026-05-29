@@ -1,17 +1,18 @@
 
 #include "Cpu.h"
 
-Cpu::Cpu() {
-    GetSystemInfo(&systemInfo);
-}
 
 //CPU Cores
 DWORD Cpu::getNumberOfProcessors() {
+    SYSTEM_INFO systemInfo;
+    GetSystemInfo(&systemInfo);
     return systemInfo.dwNumberOfProcessors;
 }
 
 //CPU Architecture
 WORD Cpu::getProcessorArchitecture() {
+    SYSTEM_INFO systemInfo;
+    GetSystemInfo(&systemInfo);
     return systemInfo.dwProcessorType;
 }
 

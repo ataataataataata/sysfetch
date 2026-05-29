@@ -5,13 +5,10 @@
 
 
 class Ram {
-private:
-    MEMORYSTATUSEX statex;
 public:
-    Ram();
-    DWORDLONG getRamSize();
-    DWORDLONG getUsedRam();
-    DWORD getMemoryLoad();
+    static DWORDLONG getRamSize();
+    static DWORDLONG getUsedRam();
+    static DWORD getMemoryLoad();
 };
 
 

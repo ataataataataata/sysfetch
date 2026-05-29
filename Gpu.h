@@ -8,7 +8,7 @@
 
 class Gpu {
     public:
-    std::string getGpuName();
+    static std::string getGpuName();
 };
 
 

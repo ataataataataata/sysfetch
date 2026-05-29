@@ -7,16 +7,16 @@
 using namespace std;
 
 int main() {
-    Cpu cpu;
-    cout << cpu.getProcessorArchitecture() << endl;
-    cout << cpu.getNumberOfProcessors() << endl;
-    cout << cpu.getCpuName() << endl;
-    System sys;
-    cout << sys.getComputerName() << endl;
-    cout<<sys.getUserName()<<endl;
-    cout << sys.getOsVersion() << endl;
-    Gpu gpu;
-    cout << gpu.getGpuName() << endl;
+
+    cout << Cpu::getProcessorArchitecture() << endl;
+    cout << Cpu::getNumberOfProcessors() << endl;
+    cout << Cpu::getCpuName() << endl;
+
+    cout << System::getComputerName() << endl;
+    cout<<System::getUserName()<<endl;
+    cout << System::getOsVersion() << endl;
+
+    cout << Gpu::getGpuName() << endl;
 
 
     return 0;

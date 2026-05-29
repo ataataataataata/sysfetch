@@ -7,7 +7,7 @@
 class Uptime {
 public:
 
-    void getUptime();
+    static void getUptime();
 
 };
 

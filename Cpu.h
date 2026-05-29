@@ -7,13 +7,10 @@
 
 class Cpu {
 public:
-    SYSTEM_INFO systemInfo;
 
-    Cpu();
-    DWORD getNumberOfProcessors();
-    WORD getProcessorArchitecture();
-
-    std::string getCpuName();
+    static DWORD getNumberOfProcessors();
+    static WORD getProcessorArchitecture();
+    static std::string getCpuName();
 
 };
 

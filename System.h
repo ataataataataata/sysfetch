@@ -8,9 +8,9 @@
 
 class System {
 public:
-    std::string getComputerName();
-    std::string getUserName();
-    std::string getOsVersion();
+    static std::string getComputerName();
+    static std::string getUserName();
+    static std::string getOsVersion();
 };
 
 
